@@ -1,4 +1,4 @@
-package WeekTwo;
+package WeekTwo.Class;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
