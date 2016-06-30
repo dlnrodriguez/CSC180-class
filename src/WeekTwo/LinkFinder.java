@@ -11,44 +11,51 @@ import java.util.regex.Pattern;
  * Created by DLN on 6/28/16.
  */
 public class LinkFinder {
-    private static final String testpattern = "(.*)(\".*\")(.*)";
-    private static final String testInput = "Hey \"girl\", hey!";
+    private ArrayList<String> arrayLinks = new ArrayList<>();
+    private Iterator<String> links;
+    private InputStream file = null;
 
-    ArrayList<String> arrayLinks = new ArrayList<>();
-    private Iterator<String> links = arrayLinks.iterator();
+    LinkFinder() {
+        this("Exercise 2 files/neumont.edu");
+    }
 
-    public void processPage(InputStream in) {
+    private LinkFinder(String filePath) {
+        try {
+            file = new FileInputStream(filePath);
+        } catch (FileNotFoundException e) {
+            System.out.println("File \"neumont.edu\" not found!");
+        }
+        processPage(file);
+    }
+
+    private void processPage(InputStream in) {
         Scanner input = new Scanner(in);
-        Pattern pattern = Pattern.compile("(.*)(a href)(.*)\"(.*)\"(.*)", Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile("(.*?)(a href=)\"(\\S*)\"(.*)", Pattern.CASE_INSENSITIVE);
 
         while (input.hasNext()) {
             Matcher matcher = pattern.matcher(input.nextLine());
             boolean matches = matcher.matches();
 
             if (matches) {
-                arrayLinks.add(matcher.group(4));
+                arrayLinks.add(matcher.group(3));
             }
         }
-
+        links = arrayLinks.iterator();
     }
 
-    public Iterator<String> getLinks() {
-        InputStream file = null;
-        try {
-            file = new FileInputStream("Exercise 2 files/neumont.edu");
-        } catch (FileNotFoundException e) {
-            System.out.println("\n\tDidn't work!\n\t\t" + e);
-        }
-
-        processPage(file);
-
+    private Iterator<String> getLinks() {
         return links;
     }
 
+    void printLinks() {
+        while (getLinks().hasNext())
+            System.out.println(getLinks().next());
+    }
+
     public static boolean test(String inTest) {
+        String testpattern = "(.*)(\".*\")(.*)";
         Pattern p = Pattern.compile(testpattern);
         Matcher m = p.matcher(inTest);
-        boolean matches = m.matches();
-        return matches;
+        return m.matches();
     }
 }
