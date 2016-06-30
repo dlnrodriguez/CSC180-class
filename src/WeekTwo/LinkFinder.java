@@ -1,7 +1,8 @@
 package WeekTwo;
 
-import java.io.InputStream;
+import java.io.*;
 import java.util.Iterator;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,29 +16,34 @@ public class LinkFinder {
     private Iterator<String> links;
 
     public void processPage(InputStream in) {
-        Pattern p = Pattern.compile("(.*)(\".*\")(.*)");
-        Matcher m = p.matcher(in.toString());
-        boolean matches = m.matches();
-
-        System.out.println(in);
+        Scanner input = new Scanner(in);
+        Pattern pattern = Pattern.compile("(.*)(\".*\")(.*)");
+        Matcher matcher = pattern.matcher(input.nextLine());
+        boolean matches = matcher.matches();
 
         if (matches) {
-
+            System.out.println(matcher.group(2));
+        } else {
+            System.out.println("Nothing");
         }
     }
 
     public Iterator<String> getLinks() {
+        InputStream file = null;
+        try {
+            file = new FileInputStream("Exercise 2 files/neumont.edu");
+        } catch (FileNotFoundException e) {
+            System.out.println("\n\tDidn't work!\n\t\t" + e);
+        }
+        processPage(file);
+
         return links;
     }
 
-    public static void main(String[] args) {
-        Pattern testing = Pattern.compile(pattern);
-        Matcher matcher = testing.matcher(testInput);
-
-        if (matcher.matches()) {
-            System.out.println(matcher.group(2));
-        } else {
-            System.out.println("Try again.");
-        }
+    public boolean test(String inTest) {
+        Pattern p = Pattern.compile(pattern);
+        Matcher m = p.matcher(inTest);
+        boolean matches = m.matches();
+        return matches;
     }
 }
