@@ -5,7 +5,6 @@ package WeekTwo;
  */
 public class LF_Main {
     public static void main(String[] args) {
-        LinkFinder finder = new LinkFinder();
-        finder.printLinks();
+        new LinkFinder().printLinks();
     }
 }
