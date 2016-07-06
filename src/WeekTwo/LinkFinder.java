@@ -108,12 +108,4 @@ public class LinkFinder {
         while (getLinks().hasNext())
             System.out.println(getLinks().next());
     }
-
-    static boolean test() {
-        while (getOriginal().hasNext() && getLinks().hasNext()) {
-            if (getOriginal().next().equals(getLinks().next()))
-                return true;
-        }
-        return false;
-    }
 }
