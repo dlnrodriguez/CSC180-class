@@ -8,8 +8,9 @@ import org.junit.Test
 class LinkFinderTest extends GroovyTestCase {
     @Test
     void test() {
-        assertFalse(LinkFinder.test("Guess What!"));
-        assertFalse(LinkFinder.test("Shouldn't work"));
-        assertTrue(LinkFinder.test("Should\"work!\""));
+        LinkFinder ln = new LinkFinder();
+        while (ln.getOriginal().hasNext() && ln.getLinks().hasNext()) {
+            assertEquals(ln.getOriginal().next(), ln.getLinks().next())
+        }
     }
 }
