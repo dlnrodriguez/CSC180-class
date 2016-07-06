@@ -44,19 +44,25 @@ import java.util.regex.Pattern;
 public class LinkFinder {
     private static ArrayList<String> arrayLinks = new ArrayList<>(), arrayOriginal = new ArrayList<>();
     private static Iterator<String> links, original;
-    private InputStream file = null, originalFile = null;
-    private String linkPattern = "(.*?)(a\\s+href\\s*=\\s*)\"(\\S*)\"(.*)";
+    private final ThreadLocal<String> linkPattern = new ThreadLocal<String>() {
+        @Override
+        protected String initialValue() {
+            return "(.*?)(a\\s+href\\s*=\\s*)\"(\\S*)\"(.*)";
+        }
+    };
 
     LinkFinder() {
         this("Exercise 2 files/neumont.edu");
     }
 
     LinkFinder(String filePath) {
+        InputStream file = null;
         try {
             file = new FileInputStream(filePath);
         } catch (FileNotFoundException e) {
             System.out.println("File \"" + filePath + "\" not found!");
         }
+        InputStream originalFile = null;
         try {
             originalFile = new FileInputStream("Exercise 2 files/results");
         } catch (FileNotFoundException e) {
@@ -68,7 +74,7 @@ public class LinkFinder {
 
     private void processPage(InputStream in) {
         Scanner input = new Scanner(in);
-        Pattern pattern = Pattern.compile(linkPattern, Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile(linkPattern.get(), Pattern.CASE_INSENSITIVE);
 
         while (input.hasNext()) {
             Matcher matcher = pattern.matcher(input.nextLine());
