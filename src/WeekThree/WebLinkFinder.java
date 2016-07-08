@@ -41,12 +41,12 @@ public class WebLinkFinder {
     private LinkIterator iterator;
     private ArrayList<String> toVisit, hasVisited;
     private URL startingURL;
-    private static final int MAX_PAGES_TO_VISIT = 200;
+    private int maxPagesToVisit = 200;
 
     protected interface visitAction {
+        void getLinks();
     }
 
-    ;
 
     private WebLinkFinder() {
         try {
@@ -54,8 +54,8 @@ public class WebLinkFinder {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        this.toVisit = new ArrayList<>(MAX_PAGES_TO_VISIT);
-        this.hasVisited = new ArrayList<>(MAX_PAGES_TO_VISIT);
+        this.toVisit = new ArrayList<>(maxPagesToVisit);
+        this.hasVisited = new ArrayList<>(maxPagesToVisit);
     }
 
     WebLinkFinder(InputStream in) {
@@ -78,7 +78,21 @@ public class WebLinkFinder {
 
     private void getLinks() {
         while (this.iterator.hasNext()) {
-            this.toVisit.add(this.iterator.next());
+            add(this.iterator.next());
+            maxPagesToVisit--;
         }
+    }
+
+    private boolean add(String link) {
+        boolean has = false;
+        while (hasVisited.iterator().hasNext() && !has) {
+            if (hasVisited.iterator().next().equalsIgnoreCase(link)) {
+                has = true;
+            }
+        }
+        if (!has) {
+            this.toVisit.add(link);
+        }
+        return true;
     }
 }
