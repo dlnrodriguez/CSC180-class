@@ -1,5 +1,7 @@
 package WeekThree;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -8,7 +10,10 @@ import java.util.regex.Pattern;
 
 /**
  * Created by DLN on 7/8/16.
+ *
+ *
  */
+
 public class LinkIterator implements Iterator<String> {
     private Scanner in;
     private String linkFound;

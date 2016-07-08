@@ -1,5 +1,12 @@
 package WeekThree;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+
 /**
  * Created by DLN on 7/8/16.
  * <p>
@@ -30,8 +37,48 @@ package WeekThree;
  * Step 5. Review your work with the instructor.
  */
 
-public class WebLinkFinder_main {
-    public static void main(String[] args) {
-        System.out.println("Hello, Java!");
+public class WebLinkFinder {
+    private LinkIterator iterator;
+    private ArrayList<String> toVisit, hasVisited;
+    private URL startingURL;
+    private static final int MAX_PAGES_TO_VISIT = 200;
+
+    protected interface visitAction {
+    }
+
+    ;
+
+    private WebLinkFinder() {
+        try {
+            this.startingURL = new URL("http://www.neumont.edu");
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        this.toVisit = new ArrayList<>(MAX_PAGES_TO_VISIT);
+        this.hasVisited = new ArrayList<>(MAX_PAGES_TO_VISIT);
+    }
+
+    WebLinkFinder(InputStream in) {
+        this();
+        this.iterator = new LinkIterator(in);
+        getLinks();
+    }
+
+    WebLinkFinder(String filePath) {
+        this();
+        InputStream file = null;
+        try {
+            file = new FileInputStream(filePath);
+        } catch (FileNotFoundException e) {
+            System.err.println("File: " + filePath + " not found!");
+        }
+        this.iterator = new LinkIterator(file);
+        getLinks();
+    }
+
+    private void getLinks() {
+        while (this.iterator.hasNext()) {
+            this.toVisit.add(this.iterator.next());
+        }
     }
 }
