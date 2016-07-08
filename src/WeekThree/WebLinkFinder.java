@@ -50,7 +50,7 @@ public class WebLinkFinder {
 
     private WebLinkFinder() {
         try {
-            this.startingURL = new URL("http://www.neumont.edu");
+            this.startingURL = new URL("http://shalladay-iis1.student.neumont.edu");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
