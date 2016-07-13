@@ -2,6 +2,7 @@ package WeekThree;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -48,31 +49,17 @@ public class WebLinkFinder {
     }
 
 
-    private WebLinkFinder() {
-        try {
-            this.startingURL = new URL("http://shalladay-iis1.student.neumont.edu");
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
+    WebLinkFinder() {
         this.toVisit = new ArrayList<>(maxPagesToVisit);
         this.hasVisited = new ArrayList<>(maxPagesToVisit);
-    }
-
-    WebLinkFinder(InputStream in) {
-        this();
-        this.iterator = new LinkIterator(in);
-        getLinks();
-    }
-
-    WebLinkFinder(String filePath) {
-        this();
-        InputStream file = null;
         try {
-            file = new FileInputStream(filePath);
-        } catch (FileNotFoundException e) {
-            System.err.println("File: " + filePath + " not found!");
+            this.startingURL = new URL("http://shalladay-iis1.student.neumont.edu");
+            this.iterator = new LinkIterator(startingURL.openStream());
+        } catch (MalformedURLException e) {
+            System.err.println(e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        this.iterator = new LinkIterator(file);
         getLinks();
     }
 
@@ -94,5 +81,10 @@ public class WebLinkFinder {
             this.toVisit.add(link);
         }
         return true;
+    }
+
+    public void print() {
+        while (this.iterator.hasNext())
+            System.out.println(this.iterator.next());
     }
 }
