@@ -1,8 +1,8 @@
 package WeekThree;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -21,11 +21,16 @@ public class LinkIterator implements Iterator<String> {
         this.in = new Scanner(in);
     }
 
+    LinkIterator(URL url) throws IOException {
+        this(url.openStream());
+    }
+
     @Override
     public boolean hasNext() {
         this.linkFound = null;
-        while (this.linkFound == null) {
-            String line = in.nextLine();
+        String line;
+        while (this.linkFound == null && this.in.hasNext()) {
+            line = this.in.nextLine();
             Matcher link = pattern.matcher(line);
             boolean matches = link.matches();
             if (matches) {

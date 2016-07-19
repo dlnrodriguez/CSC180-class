@@ -39,52 +39,73 @@ import java.util.ArrayList;
  */
 
 public class WebLinkFinder {
+    private boolean hasLink = false;
     private LinkIterator iterator;
     private ArrayList<String> toVisit, hasVisited;
-    private URL startingURL;
     private int maxPagesToVisit = 200;
+    private String url = "http://shalladay-iis1.student.neumont.edu";
 
     protected interface visitAction {
         void getLinks();
     }
 
-
     WebLinkFinder() {
         this.toVisit = new ArrayList<>(maxPagesToVisit);
         this.hasVisited = new ArrayList<>(maxPagesToVisit);
         try {
-            this.startingURL = new URL("http://shalladay-iis1.student.neumont.edu");
-            this.iterator = new LinkIterator(startingURL.openStream());
+            URL startingURL = new URL(this.url);
+            this.iterator = new LinkIterator(startingURL);
         } catch (MalformedURLException e) {
             System.err.println(e.getMessage());
         } catch (IOException e) {
             e.printStackTrace();
         }
         getLinks();
+        print();
+        visit();
     }
 
     private void getLinks() {
-        while (this.iterator.hasNext()) {
+        while (this.iterator.hasNext() && maxPagesToVisit > 0) {
             add(this.iterator.next());
             maxPagesToVisit--;
         }
     }
 
     private boolean add(String link) {
-        boolean has = false;
-        while (hasVisited.iterator().hasNext() && !has) {
-            if (hasVisited.iterator().next().equalsIgnoreCase(link)) {
-                has = true;
+        while (this.hasVisited.iterator().hasNext() && !hasLink) {
+            for (int k = 0; k < hasVisited.size(); k++) {
+                if (hasVisited.get(k).equalsIgnoreCase(link)) {
+                    hasLink = true;
+                }
             }
         }
-        if (!has) {
+        if (!hasLink) {
             this.toVisit.add(link);
         }
+        hasLink = false;
         return true;
     }
 
     public void print() {
-        while (this.iterator.hasNext())
-            System.out.println(this.iterator.next());
+        for (int k = 0; k < this.toVisit.size(); k++)
+            System.out.println(this.toVisit.get(k));
+    }
+
+    public void visit() {
+        URL link;
+        try {
+            String s;
+            for (int k = 0; k < toVisit.size(); k++) {
+                s = toVisit.get(k);
+                this.toVisit.remove(k);
+                link = new URL(url + s);
+                this.iterator = new LinkIterator(link);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        getLinks();
+        print();
     }
 }
