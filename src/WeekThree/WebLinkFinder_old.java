@@ -38,7 +38,7 @@ import java.util.ArrayList;
  * Step 5. Review your work with the instructor.
  */
 
-public class WebLinkFinder {
+public class WebLinkFinder_old {
     private boolean hasLink = false;
     private LinkIterator iterator;
     private ArrayList<String> toVisit, hasVisited;
@@ -49,7 +49,7 @@ public class WebLinkFinder {
         void getLinks();
     }
 
-    WebLinkFinder() {
+    WebLinkFinder_old() {
         this.toVisit = new ArrayList<>(maxPagesToVisit);
         this.hasVisited = new ArrayList<>(maxPagesToVisit);
         try {
@@ -87,18 +87,20 @@ public class WebLinkFinder {
         return true;
     }
 
-    public void print() {
-        for (int k = 0; k < this.toVisit.size(); k++)
-            System.out.println(this.toVisit.get(k));
+    private void print() {
+//        for (int k = 0; k < this.toVisit.size(); k++)
+//            System.out.println(this.toVisit.get(k));
+        this.toVisit.forEach(System.out::println);
     }
 
-    public void visit() {
+    private void visit() {
         URL link;
         try {
             String s;
             for (int k = 0; k < toVisit.size(); k++) {
                 s = toVisit.get(k);
                 this.toVisit.remove(k);
+                //this.hasVisited.add(s);
                 link = new URL(url + s);
                 this.iterator = new LinkIterator(link);
             }
