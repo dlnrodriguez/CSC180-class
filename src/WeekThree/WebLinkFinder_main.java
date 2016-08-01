@@ -32,6 +32,6 @@ package WeekThree;
 
 public class WebLinkFinder_main {
     public static void main(String[] args) {
-        new WebLinkFinder();
+        new WebLinkFinder("http://shalladay-iis1.student.neumont.edu", 60);
     }
 }
