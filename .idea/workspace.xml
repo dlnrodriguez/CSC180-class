@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d42fc957-75d7-44aa-99a9-f61fc2b18ec2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WeekThree/WebLinkFinderTest.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CSC180-class/WeekThree/WebLinkFinder.class" afterPath="$PROJECT_DIR$/out/production/CSC180-class/WeekThree/WebLinkFinder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CSC180-class/WeekThree/WebLinkFinder_main.class" afterPath="$PROJECT_DIR$/out/production/CSC180-class/WeekThree/WebLinkFinder_main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java" afterPath="$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WeekThree/WebLinkFinder_main.java" afterPath="$PROJECT_DIR$/src/WeekThree/WebLinkFinder_main.java" />
     </list>
     <ignored path="CSC180-class.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,46 +30,7 @@
     <favorites_list name="CSC180-class" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="WebLinkFinder_main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinder_main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="69" />
-              <folding>
-                <element signature="docComment;class#WebLinkFinder_main#0" expanded="false" />
-                <element signature="e#1924#1925#0" expanded="true" />
-                <element signature="e#2006#2007#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebLinkFinder.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="80" column="53" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#374#375#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebLinkFinderTest.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinderTest.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="81" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,9 +72,9 @@
         <option value="$PROJECT_DIR$/src/WeekThree/Class/WebLinkFinder.java" />
         <option value="$PROJECT_DIR$/src/WeekThree/LinkIterator.java" />
         <option value="$PROJECT_DIR$/respect.bin" />
-        <option value="$PROJECT_DIR$/src/WeekThree/WebLinkFinder_main.java" />
         <option value="$PROJECT_DIR$/src/WeekThree/test.groovy" />
         <option value="$PROJECT_DIR$/src/WeekThree/WebLinkFinderTest.groovy" />
+        <option value="$PROJECT_DIR$/src/WeekThree/WebLinkFinder_main.java" />
         <option value="$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java" />
       </list>
     </option>
@@ -196,10 +154,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeekTwo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -216,20 +170,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WeekThree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSC180-class" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSC180-class" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -283,7 +223,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WebLinkFinderTest">
+  <component name="RunManager" selected="Application.WebLinkFinder_main">
     <configuration default="false" name="LinkFinderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -837,8 +777,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WebLinkFinderTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.WebLinkFinder_main" />
+        <item index="0" class="java.lang.String" itemvalue="Application.WebLinkFinder_main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WebLinkFinderTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.WebLinkFinderTest.test" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.LinkFinderTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.LinkFinderTest.test" />
@@ -886,7 +826,7 @@
       <workItem from="1469651784696" duration="686000" />
       <workItem from="1469736060941" duration="4735000" />
       <workItem from="1469755389543" duration="5346000" />
-      <workItem from="1470036133843" duration="8955000" />
+      <workItem from="1470036133843" duration="9300000" />
     </task>
     <task id="LOCAL-00001" summary="test added&#10;">
       <created>1467096567099</created>
@@ -1042,13 +982,17 @@
       <option name="project" value="LOCAL" />
       <updated>1470043308982</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="test created">
+      <created>1470046168489</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1470046168489</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WebLinkFinderTest - 2016.08.01 at 04h 00m 58s.xml">
-      <configuration name="WebLinkFinderTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WebLinkFinderTest - 2016.08.01 at 04h 01m 29s.xml">
       <configuration name="WebLinkFinderTest" configurationId="JUnit" />
     </history-entry>
@@ -1076,13 +1020,16 @@
     <history-entry file="WebLinkFinderTest - 2016.08.01 at 04h 07m 50s.xml">
       <configuration name="WebLinkFinderTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="WebLinkFinderTest - 2016.08.01 at 04h 10m 03s.xml">
+      <configuration name="WebLinkFinderTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83658000" />
+    <option name="totallyTimeSpent" value="84003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1714" height="1440" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1091,12 +1038,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3115578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3115578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17036173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17036173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1174,7 +1121,8 @@
     <MESSAGE value="progress" />
     <MESSAGE value="finished" />
     <MESSAGE value="old wlf deleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="old wlf deleted" />
+    <MESSAGE value="test created" />
+    <option name="LAST_COMMIT_MESSAGE" value="test created" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1546,18 +1494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinder_main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="69" />
-          <folding>
-            <element signature="docComment;class#WebLinkFinder_main#0" expanded="false" />
-            <element signature="e#1924#1925#0" expanded="true" />
-            <element signature="e#2006#2007#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WeekTwo/LinkFinderTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1566,23 +1502,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinderTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="81" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="80" column="53" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
+        <state relative-caret-position="585">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#336#337#0" expanded="true" />
             <element signature="e#374#375#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinder_main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+          <folding>
+            <element signature="docComment;class#WebLinkFinder_main#0" expanded="false" />
+            <element signature="e#1924#1925#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinderTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="81" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -35,7 +35,6 @@ class WebLinkFinder {
         while (this.iterator.hasNext() && max > 0) {
             if (check(this.toVisit, this.iterator.next()))
                 check(this.toVisit, this.iterator.next());
-            //else System.err.println(this.iterator.next());
         }
         if (!this.iterator.hasNext() && !this.toVisit.isEmpty() || max == 0) {
             visit();
@@ -59,7 +58,7 @@ class WebLinkFinder {
         if (this.toVisit.size() == 1) {
             if (check(this.hasVisited, this.toVisit.get(0))) {
                 this.toVisit.clear();
-                System.err.println("\n\t++ NO MORE PAGES TO VISIT ++\n");
+                System.out.println("\n\t++ NO MORE PAGES TO VISIT ++\n");
             }
         } else if (this.toVisit.size() > 0) {
             String s = this.toVisit.get(0);
@@ -71,7 +70,7 @@ class WebLinkFinder {
         findLinks();
     }
 
-    private void print() {
+    protected void print() {
         this.hasVisited.forEach(System.out::println);
         System.out.println("\n+++\n");
         this.toVisit.forEach(System.out::println);
