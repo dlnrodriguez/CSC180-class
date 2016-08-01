@@ -50,7 +50,7 @@ class WebLinkFinder {
                 if (s.equalsIgnoreCase(st))
                     return false;
         }
-        max--;
+        --max;
         return it.add(st);
     }
 
