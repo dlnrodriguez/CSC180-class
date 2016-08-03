@@ -25,7 +25,7 @@ class Read {
             RandomAccessFile classFile = new RandomAccessFile("src/WeekFour/Practice/Write.java", "r");
             RandomAccessFile file = new RandomAccessFile("respect.bin", "r");
             int number;
-            file.seek(1);
+            file.seek(8);
             number = file.readInt();
             System.out.print(number);
         } catch (Exception e) {

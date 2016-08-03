@@ -53,12 +53,11 @@ package WeekFour;
 public class Index_main {
     public static void main(String[] args) {
         PersistentArray pa = new PersistentArray("file.bin");
+        pa.set(0, 4876347485L);
+        pa.set(1, 93);
         pa.set(2, 59997L);
-        pa.set(0, 198);
-        pa.set(1, 3);
-        for (int k = 0; k < 3; k++)
-            System.out.println(k + " " + pa.get(k));
-        System.out.println(pa.getLength());
+        for (int a = 0; a < pa.getLength() / 8; a++)
+            System.out.println(pa.get(a));
         pa.close();
     }
 }

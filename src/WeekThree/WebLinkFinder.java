@@ -61,13 +61,12 @@ class WebLinkFinder {
                 this.toVisit.clear();
                 System.out.println("\n\t++ NO MORE PAGES TO VISIT ++\n");
             }
-        } else if (this.toVisit.size() > 0) {
+        } else {
             this.iterator = new LinkIterator(new URL(this.startingUrl + s));
             this.hasVisited.add(s);
             this.toVisit.remove(0);
+            findLinks();
         }
-
-        findLinks();
     }
 
     protected void print() {
@@ -85,7 +84,3 @@ class WebLinkFinder {
         return false;
     }
 }
-/*
-visit(URL)
-sout(URL)
- */
