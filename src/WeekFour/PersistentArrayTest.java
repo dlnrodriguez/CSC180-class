@@ -28,7 +28,6 @@ public class PersistentArrayTest {
         PersistentArray test = new PersistentArray("testingFile2.bin");
 
         /* MUST RUN FIRST TEST METHOD FOR PRECEDING CODE TO WORK! */
-
         assertTrue(test.delete("testingfile1.bin"));
     }
 

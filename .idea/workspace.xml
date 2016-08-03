@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d42fc957-75d7-44aa-99a9-f61fc2b18ec2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace[Conflict 4].xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace[Conflict 5].xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace[Conflict 6].xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/respect.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WeekFour/PersistentArrayTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testingFile2.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testingfile1.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WeekFour/PersistentArray.java" afterPath="$PROJECT_DIR$/src/WeekFour/PersistentArray.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WeekFour/PersistentArrayTest.java" afterPath="$PROJECT_DIR$/src/WeekFour/PersistentArrayTest.java" />
     </list>
     <ignored path="CSC180-class.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,8 +65,8 @@
       <file leaf-file-name="PersistentArrayTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WeekFour/PersistentArrayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+            <state relative-caret-position="465">
+              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -210,6 +203,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSC180-class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSC180-class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeekFour" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -860,7 +871,7 @@
       <workItem from="1469755389543" duration="5346000" />
       <workItem from="1470036133843" duration="12672000" />
       <workItem from="1470052494008" duration="6661000" />
-      <workItem from="1470192604978" duration="6876000" />
+      <workItem from="1470192604978" duration="6933000" />
     </task>
     <task id="LOCAL-00001" summary="test added&#10;">
       <created>1467096567099</created>
@@ -1051,7 +1062,14 @@
       <option name="project" value="LOCAL" />
       <updated>1470211793844</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="test created">
+      <created>1470223953133</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1470223953133</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1087,7 +1105,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100912000" />
+    <option name="totallyTimeSpent" value="100969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1494" height="1440" extended-state="0" />
@@ -1181,12 +1199,12 @@
     <MESSAGE value="progress" />
     <MESSAGE value="finished" />
     <MESSAGE value="old wlf deleted" />
-    <MESSAGE value="test created" />
     <MESSAGE value="weblinkfinder completed" />
     <MESSAGE value="persistent array work" />
     <MESSAGE value="file.bin added" />
     <MESSAGE value="work" />
-    <option name="LAST_COMMIT_MESSAGE" value="work" />
+    <MESSAGE value="test created" />
+    <option name="LAST_COMMIT_MESSAGE" value="test created" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1527,8 +1545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WeekFour/PersistentArrayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+        <state relative-caret-position="465">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding />
         </state>
       </provider>
