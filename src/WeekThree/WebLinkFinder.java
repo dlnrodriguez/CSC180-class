@@ -29,6 +29,7 @@ class WebLinkFinder {
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
+        print();
     }
 
     private void findLinks() throws IOException {
@@ -37,7 +38,7 @@ class WebLinkFinder {
                 check(this.toVisit, this.iterator.next());
         }
         if (!this.iterator.hasNext() && !this.toVisit.isEmpty() || max == 0) {
-            visit();
+            visit(this.toVisit.get(0));
         }
     }
 
@@ -54,16 +55,15 @@ class WebLinkFinder {
         return it.add(st);
     }
 
-    private void visit() throws IOException {
+    private void visit(String s) throws IOException {
         if (this.toVisit.size() == 1) {
             if (check(this.hasVisited, this.toVisit.get(0))) {
                 this.toVisit.clear();
                 System.out.println("\n\t++ NO MORE PAGES TO VISIT ++\n");
             }
         } else if (this.toVisit.size() > 0) {
-            String s = this.toVisit.get(0);
             this.iterator = new LinkIterator(new URL(this.startingUrl + s));
-            this.hasVisited.add(this.toVisit.get(0));
+            this.hasVisited.add(s);
             this.toVisit.remove(0);
         }
 
@@ -84,5 +84,8 @@ class WebLinkFinder {
                     return true;
         return false;
     }
-
 }
+/*
+visit(URL)
+sout(URL)
+ */

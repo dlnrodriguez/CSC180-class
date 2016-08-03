@@ -9,7 +9,7 @@ public class Write {
     public static void main(String[] args) {
         try {
             RandomAccessFile file = new RandomAccessFile("respect.bin", "rw");
-            file.writeInt(-1);
+            file.writeInt(-18);
             file.writeInt(42);
             file.writeInt(73);
             file.writeInt(19);
@@ -25,7 +25,7 @@ class Read {
             RandomAccessFile classFile = new RandomAccessFile("src/WeekFour/Practice/Write.java", "r");
             RandomAccessFile file = new RandomAccessFile("respect.bin", "r");
             int number;
-            file.seek(0);
+            file.seek(1);
             number = file.readInt();
             System.out.print(number);
         } catch (Exception e) {
