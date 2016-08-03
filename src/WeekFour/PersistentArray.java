@@ -7,19 +7,23 @@ import java.io.RandomAccessFile;
 
 /**
  * Created by DLN on 8/1/16.
+ *
+ * ** just getting rid of the warning
  */
-public class PersistentArray {
+class PersistentArray {
     private static RandomAccessFile file;
+    private int arraySize;
+    private long initialValue;
 
-    public PersistentArray(String fileName) {
+    PersistentArray(String fileName) {
         if (!fileName.endsWith(".bin"))
             fileName = fileName + ".bin";
-        int size = 0;
-        long initialValue = 0;
-        initialize(fileName, size, initialValue);
+        this.arraySize = 0;
+        this.initialValue = 0;
+        initialize(fileName, getArraySize(), getInitialValue());
     }
 
-    public static void initialize(String fileName, int size, long initialValue) {
+    private static void initialize(String fileName, int size, long initialValue) {
         try {
             file = new RandomAccessFile(fileName, "rw");
             file.setLength(size);
@@ -29,7 +33,7 @@ public class PersistentArray {
         }
     }
 
-    public void set(int index, long value) {
+    void set(int index, long value) {
         try {
             file.seek(index * 8);
             file.writeLong(value);
@@ -38,7 +42,7 @@ public class PersistentArray {
         }
     }
 
-    public long get(int index) {
+    long get(int index) {
         try {
             file.seek(index * 8);
             return file.readLong();
@@ -50,7 +54,7 @@ public class PersistentArray {
         return -0;
     }
 
-    public long getLength() {
+    long getLength() {
         try {
             return (file.length());
         } catch (IOException e) {
@@ -59,7 +63,7 @@ public class PersistentArray {
         return 0;
     }
 
-    public void close() {
+    void close() {
         try {
             file.close();
         } catch (IOException e) {
@@ -67,8 +71,24 @@ public class PersistentArray {
         }
     }
 
-    public static boolean delete(String fileName) {
+    public boolean delete(String fileName) {
         File f = new File(fileName);
         return f.delete();
+    }
+
+    public int getArraySize() {
+        return arraySize;
+    }
+
+    public void setArraySize(int arraySize) {
+        this.arraySize = arraySize;
+    }
+
+    public long getInitialValue() {
+        return initialValue;
+    }
+
+    public void setInitialValue(long initialValue) {
+        this.initialValue = initialValue;
     }
 }
