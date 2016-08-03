@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * Created by DLN on 7/25/16.
  */
-class WebLinkFinder {
+class WebLinkFinder implements VisitAction {
     private LinkIterator iterator;
     private ArrayList<String> toVisit, hasVisited;
     private int max;
@@ -29,7 +29,6 @@ class WebLinkFinder {
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
-        print();
     }
 
     private void findLinks() throws IOException {
@@ -55,21 +54,24 @@ class WebLinkFinder {
         return it.add(st);
     }
 
-    private void visit(String s) throws IOException {
+    public void visit(String s) {
         if (this.toVisit.size() == 1) {
             if (check(this.hasVisited, this.toVisit.get(0))) {
                 this.toVisit.clear();
-                System.out.println("\n\t++ NO MORE PAGES TO VISIT ++\n");
             }
         } else {
-            this.iterator = new LinkIterator(new URL(this.startingUrl + s));
-            this.hasVisited.add(s);
-            this.toVisit.remove(0);
-            findLinks();
+            try {
+                this.iterator = new LinkIterator(new URL(this.startingUrl + s));
+                this.hasVisited.add(s);
+                this.toVisit.remove(0);
+                findLinks();
+            } catch (IOException e) {
+                System.err.println("Error: " + e.getMessage());
+            }
         }
     }
 
-    protected void print() {
+    private void print() {
         this.hasVisited.forEach(System.out::println);
         System.out.println("\n+++\n");
         this.toVisit.forEach(System.out::println);

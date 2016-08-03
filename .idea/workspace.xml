@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d42fc957-75d7-44aa-99a9-f61fc2b18ec2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WeekThree/VisitAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CSC180-class/WeekThree/WebLinkFinder.class" afterPath="$PROJECT_DIR$/out/production/CSC180-class/WeekThree/WebLinkFinder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WeekFour/PersistentArrayTest.java" afterPath="$PROJECT_DIR$/src/WeekFour/PersistentArrayTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java" afterPath="$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java" />
     </list>
     <ignored path="CSC180-class.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,43 +32,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index_main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeekFour/Index_main.java">
+      <file leaf-file-name="WebLinkFinder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
+            <state relative-caret-position="579">
+              <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
               <folding>
-                <element signature="docComment;class#Index_main#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersistentArray.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeekFour/PersistentArray.java">
+      <file leaf-file-name="VisitAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WeekThree/VisitAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
-              <folding>
-                <element signature="docComment;class#PersistentArray#0" expanded="false" />
-                <element signature="e#1974#1975#0" expanded="true" />
-                <element signature="e#2006#2007#0" expanded="true" />
-                <element signature="e#2053#2054#0" expanded="true" />
-                <element signature="e#2095#2096#0" expanded="true" />
-                <element signature="e#2132#2133#0" expanded="true" />
-                <element signature="e#2167#2168#0" expanded="true" />
-                <element signature="e#2221#2222#0" expanded="true" />
-                <element signature="e#2269#2270#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersistentArrayTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/WeekFour/PersistentArrayTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -78,8 +60,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -122,13 +104,13 @@
         <option value="$PROJECT_DIR$/src/WeekFour/Index_PA_main.java" />
         <option value="$PROJECT_DIR$/src/WeekFour/Indexor.java" />
         <option value="$PROJECT_DIR$/respect.bin" />
-        <option value="$PROJECT_DIR$/src/WeekThree/VisitAction.java" />
         <option value="$PROJECT_DIR$/src/WeekFour/Index_main.java" />
         <option value="$PROJECT_DIR$/src/WeekFour/Practice/Write.java" />
-        <option value="$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java" />
         <option value="$PROJECT_DIR$/file.bin" />
         <option value="$PROJECT_DIR$/src/WeekFour/PersistentArray.java" />
         <option value="$PROJECT_DIR$/src/WeekFour/PersistentArrayTest.java" />
+        <option value="$PROJECT_DIR$/src/WeekThree/VisitAction.java" />
+        <option value="$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java" />
       </list>
     </option>
   </component>
@@ -220,7 +202,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WeekFour" />
+              <option name="myItemId" value="WeekThree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -278,7 +260,7 @@
       <recent name="WeekThree" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PersistentArrayTest.test">
+  <component name="RunManager" selected="Application.WebLinkFinder_main">
     <configuration default="false" name="WebLinkFinder_main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -820,10 +802,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PersistentArrayTest.test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PersistentArrayTest.delete" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Index_main" />
-        <item index="3" class="java.lang.String" itemvalue="Application.WebLinkFinder_main" />
+        <item index="0" class="java.lang.String" itemvalue="Application.WebLinkFinder_main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PersistentArrayTest.test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PersistentArrayTest.delete" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Index_main" />
         <item index="4" class="java.lang.String" itemvalue="Application.Read" />
       </list>
     </recent_temporary>
@@ -871,7 +853,7 @@
       <workItem from="1469755389543" duration="5346000" />
       <workItem from="1470036133843" duration="12672000" />
       <workItem from="1470052494008" duration="6661000" />
-      <workItem from="1470192604978" duration="6933000" />
+      <workItem from="1470192604978" duration="7359000" />
     </task>
     <task id="LOCAL-00001" summary="test added&#10;">
       <created>1467096567099</created>
@@ -1069,7 +1051,14 @@
       <option name="project" value="LOCAL" />
       <updated>1470223953133</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="formatting">
+      <created>1470223992048</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1470223992048</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1105,11 +1094,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100969000" />
+    <option name="totallyTimeSpent" value="101395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1494" height="1440" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1118,12 +1107,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31012204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31012204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19477911" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19477911" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1179,7 +1168,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reorganized and files added&#10;" />
     <MESSAGE value="test created&#10;&#10;" />
     <MESSAGE value="finds quoted values with &quot;a&quot; tag" />
     <MESSAGE value="reformatted main class" />
@@ -1204,7 +1192,8 @@
     <MESSAGE value="file.bin added" />
     <MESSAGE value="work" />
     <MESSAGE value="test created" />
-    <option name="LAST_COMMIT_MESSAGE" value="test created" />
+    <MESSAGE value="formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="formatting" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1455,7 +1444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeekThree/VisitAction.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/io/PrintStream.java" />
     <entry file="file://$PROJECT_DIR$/src/WeekFour/Practice/Write.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1478,16 +1466,6 @@
         <state relative-caret-position="105">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1548,6 +1526,24 @@
         <state relative-caret-position="465">
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeekThree/VisitAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeekThree/WebLinkFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
