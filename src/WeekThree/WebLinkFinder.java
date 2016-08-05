@@ -60,8 +60,13 @@ class WebLinkFinder implements VisitAction {
                 this.toVisit.clear();
             }
         } else {
+            String slash;
+
+            if (s.startsWith("/")) slash = this.startingUrl;
+            else slash = "";
+
             try {
-                this.iterator = new LinkIterator(new URL(this.startingUrl + s));
+                this.iterator = new LinkIterator(new URL(slash + s));
                 this.hasVisited.add(s);
                 this.toVisit.remove(0);
                 findLinks();

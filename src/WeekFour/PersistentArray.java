@@ -23,7 +23,7 @@ class PersistentArray {
         initialize(fileName, getArraySize(), getInitialValue());
     }
 
-    private static void initialize(String fileName, int size, long initialValue) {
+    public static void initialize(String fileName, int size, long initialValue) {
         try {
             file = new RandomAccessFile(fileName, "rw");
             file.setLength(size);
@@ -71,13 +71,13 @@ class PersistentArray {
         }
     }
 
-    public boolean delete(String fileName) {
+    public static boolean delete(String fileName) {
         File f = new File(fileName);
         return f.delete();
     }
 
     public int getArraySize() {
-        return arraySize;
+        return (int) getLength() / 8;
     }
 
     public void setArraySize(int arraySize) {

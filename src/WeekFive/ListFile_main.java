@@ -59,6 +59,6 @@ package WeekFive;
  */
 public class ListFile_main {
     public static void main(String[] args) {
-        new ListFile("listfile.bin");
+        ListFile.initialize("listfile.bin");
     }
 }

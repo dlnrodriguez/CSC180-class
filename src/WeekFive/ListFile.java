@@ -15,7 +15,9 @@ public class ListFile {
         initialize(fileName);
     }
 
-    private static void initialize(String fileName) {
+    public static void initialize(String fileName) {
+        if (!fileName.endsWith(".bin"))
+            fileName = fileName + ".bin";
         try {
             file = new RandomAccessFile(fileName, "rw");
         } catch (FileNotFoundException e) {
@@ -24,24 +26,31 @@ public class ListFile {
     }
 
     public long newEntry(Entry entry) {
-
+        return (long) entry.hashCode();
     }
 
     public Entry getEntry(long offset) {
-
+        try {
+            file.seek(offset * 8);
+            file.readLong();
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        return new Entry("", 0, 0);
     }
 
     public void putEntry(long offset, Entry entry) {
         try {
-            file.seek(offset);
-            file.writeLong(0x6feed);
+            file.seek(offset * 8);
+            file.writeLong(entry.getValue());
         } catch (IOException e) {
             System.err.println("Error: " + e.getMessage());
         }
     }
 
-    public static void delete(String fileName) {
-
+    public static boolean delete(String fileName) {
+        File f = new File(fileName);
+        return f.delete();
     }
 
     public void close() {
