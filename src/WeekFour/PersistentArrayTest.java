@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class PersistentArrayTest {
     @Test
     public void test() {
-        PersistentArray test = new PersistentArray("testingfile1.bin");
+        PersistentArray test = new PersistentArray("testingfile1");
 
         test.set(0, 15);
         test.set(1, 16);
@@ -21,14 +21,17 @@ public class PersistentArrayTest {
         assertEquals(test.get(1), 18L);
         assertEquals(test.get(2), 17L);
         assertNotEquals(test.get(1), 16L);
+
+        test.close();
     }
 
     @Test
     public void delete() throws Exception {
         PersistentArray test = new PersistentArray("testingFile2.bin");
 
-        /* MUST RUN FIRST TEST METHOD FOR PRECEDING CODE TO WORK! */
+        /* MUST RUN test() METHOD FIRST! */
         assertTrue(test.delete("testingfile1.bin"));
+        test.close();
     }
 
 }

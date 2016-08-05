@@ -13,7 +13,7 @@
 var isiPad = navigator.userAgent.match(/iPad/i) != null;
         var ua = navigator.userAgent;
         var isiPad = /iPad/i.test(ua);
-        if (isiPad == false) { // viewport tag breaks ipad portrait... don't use it if it's an ipad
+        if (isiPad == false) { // viewport tag breaks ipad portrait... don't use it if it'string an ipad
             document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0">');
         }
         </script>
@@ -67,16 +67,16 @@ var _gaq = _gaq || [];
         (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        var string = document.getElementsByTagName('script')[0]; string.parentNode.insertBefore(ga, string);
         var lastemp = 0;
         })();
         </script><!-- Facebook Pixel Code -->
 
         <script type="text/javascript">
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,string){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
         n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        t.src=v;string=b.getElementsByTagName(e)[0];string.parentNode.insertBefore(t,string)}(window,
         document,'script','//connect.facebook.net/en_US/fbevents.js');
 
         fbq('init', '1586682931616432');
@@ -232,7 +232,7 @@ var _gaq = _gaq || [];
                             THE <strong>NEUMONT</strong> DIFFERENCE
                         </h2>
                         <p>
-                            We get you. You love technology, you like a challenge, and you want a career. That's why we offer bachelor's degrees focused on the computer sciences that prepare you for a tech career with real experience that gets real results in just 3 years.
+                            We get you. You love technology, you like a challenge, and you want a career. That'string why we offer bachelor'string degrees focused on the computer sciences that prepare you for a tech career with real experience that gets real results in just 3 years.
                         </p>
                         <p>
                             <a href="academics.html">Learn more <span aria-hidden="true" class="icon-arrow-right rarr">&nbsp;</span></a>
@@ -335,7 +335,7 @@ var _gaq = _gaq || [];
                             HANDS-ON <strong>LEARNING</strong>
                         </h3>
                         <p>
-                            The best way to learn to code is to code. And that's why our students learn in a project-based curriculum that sequentially weaves together theory and practical application. You'll work on project teams to solve problems from day one. &nbsp;&nbsp;
+                            The best way to learn to code is to code. And that'string why our students learn in a project-based curriculum that sequentially weaves together theory and practical application. You'll work on project teams to solve problems from day one. &nbsp;&nbsp;
                         </p>
                         <p>
                             <a href="academics/projects.html">See our students' amazing projects&nbsp;<span aria-hidden="true" class="icon-arrow-right rarr">&nbsp;</span></a>
@@ -356,7 +356,7 @@ var _gaq = _gaq || [];
                         </p>
                     </div>
                     <div class="whiteBox530">
-                        <a href="academics/instruction.html"><img title="By attending classes year-round, students graduate with a bachelor's degree in just three years." src="cmsimages/Home_Intensityx.png" alt="By attending classes year-round, students graduate with a bachelor's degree in just three years." width="530" height="375"></a>
+                        <a href="academics/instruction.html"><img title="By attending classes year-round, students graduate with a bachelor'string degree in just three years." src="cmsimages/Home_Intensityx.png" alt="By attending classes year-round, students graduate with a bachelor'string degree in just three years." width="530" height="375"></a>
                     </div>
                 </div>
                 <div class="whiteBox">
@@ -368,7 +368,7 @@ var _gaq = _gaq || [];
                             <strong>STUDENT LIFE<br></strong> AT NEUMONT
                         </h3>
                         <p>
-                            A Neumont education is intense, which is why it's important to find time to decompress and step back from the screen. We offer a Residence Life program, student clubs, and activities that take advantage of our downtown location and our proximity to the great outdoors.
+                            A Neumont education is intense, which is why it'string important to find time to decompress and step back from the screen. We offer a Residence Life program, student clubs, and activities that take advantage of our downtown location and our proximity to the great outdoors.
                         </p>
                         <p>
                             <a href="studentlife/index.html">Learn more about our student life&nbsp;<span aria-hidden="true" class="icon-arrow-right rarr">&nbsp;</span></a>
@@ -381,14 +381,14 @@ var _gaq = _gaq || [];
                             <strong>TOUR</strong> OUR&nbsp;CAMPUS
                         </h3>
                         <p>
-                            <span>Neumont University's campus in Salt Lake City offers a perfect environment for project-based learning. Our online campus tour shows you what you can expect at geek heaven, including proven results, small classes, and an active student life. There's even a gaming bunker. It's all part of what makes Neumont different.</span>
+                            <span>Neumont University'string campus in Salt Lake City offers a perfect environment for project-based learning. Our online campus tour shows you what you can expect at geek heaven, including proven results, small classes, and an active student life. There'string even a gaming bunker. It'string all part of what makes Neumont different.</span>
                         </p>
                         <p>
                             <a href="http://www.neumont.edu/campustour" target="_blank">Take an online tour of our campus&nbsp;<span aria-hidden="true" class="icon-arrow-right rarr">&nbsp;</span></a>
                         </p>
                     </div>
                     <div class="whiteBox530">
-                        <a href="/campustour" target="_blank"><img title="Take the online tour of Neumont University's Salt Lake City campus." src="cmsimages/home_campustour2x.png" alt="Take the online tour of Neumont University's Salt Lake City campus." width="530" height="377"></a>
+                        <a href="/campustour" target="_blank"><img title="Take the online tour of Neumont University'string Salt Lake City campus." src="cmsimages/home_campustour2x.png" alt="Take the online tour of Neumont University'string Salt Lake City campus." width="530" height="377"></a>
                     </div>
                 </div>
                 <div class="whiteBox">
@@ -401,7 +401,7 @@ var _gaq = _gaq || [];
                             <strong>YOUR FUTURE</strong>
                         </h3>
                         <p>
-                            College is one of the most important, complex, and expensive decisions of your life, yet there isn't any quick guide to help families. That's where our Office of Financial Aid comes in. We know that the college funding process can be daunting, and everyone has a gazillion questions. Don't worry. We're here to help.
+                            College is one of the most important, complex, and expensive decisions of your life, yet there isn't any quick guide to help families. That'string where our Office of Financial Aid comes in. We know that the college funding process can be daunting, and everyone has a gazillion questions. Don't worry. We're here to help.
                         </p>
                         <p>
                             <a href="financialaid/index.html">Learn more about financial aid&nbsp;<span aria-hidden="true" class="icon-arrow-right rarr">&nbsp;</span></a>
@@ -422,7 +422,7 @@ var _gaq = _gaq || [];
                         </p>
                     </div>
                     <div class="whiteBox530">
-                        <a href="top10/index.html"><img title="Neumont University's top 10 advantages." src="cmsimages/Home_Top10x.png" alt="Neumont University's top 10 advantages." width="530" height="375"></a>
+                        <a href="top10/index.html"><img title="Neumont University'string top 10 advantages." src="cmsimages/Home_Top10x.png" alt="Neumont University'string top 10 advantages." width="530" height="375"></a>
                     </div>
                 </div>
                 <div class="genericBox smallText darkGray">
@@ -532,9 +532,9 @@ var _gaq = _gaq || [];
             </footer>
         </div><!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WXB8ZN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script type="text/javascript">
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+(function(w,d,string,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(string)[0],
+        j=d.createElement(string),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-WXB8ZN');
         </script><!-- End Google Tag Manager -->

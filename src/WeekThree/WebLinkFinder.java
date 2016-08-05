@@ -71,14 +71,7 @@ class WebLinkFinder implements VisitAction {
         }
     }
 
-    private void print() {
-        this.hasVisited.forEach(System.out::println);
-        System.out.println("\n+++\n");
-        this.toVisit.forEach(System.out::println);
-    }
-
     protected boolean hasDuplicates() {
-        //this.hasVisited.add("/Horse/Biology.html");
         for (int j = 0; j < this.hasVisited.size(); j++)
             for (int k = j + 1; k < this.hasVisited.size(); k++)
                 if (this.hasVisited.get(j).equalsIgnoreCase(this.hasVisited.get(k)))
