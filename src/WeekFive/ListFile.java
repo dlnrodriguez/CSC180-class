@@ -1,5 +1,7 @@
 package WeekFive;
 
+import WeekFour.PersistentArray;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -8,11 +10,11 @@ import java.io.RandomAccessFile;
 /**
  * Created by DLN on 8/3/16.
  */
-public class ListFile {
+public class ListFile extends PersistentArray {
     private static RandomAccessFile file;
 
     ListFile(String fileName) {
-        initialize(fileName);
+        super(fileName);
     }
 
     public static void initialize(String fileName) {
@@ -20,8 +22,9 @@ public class ListFile {
             fileName = fileName + ".bin";
         try {
             file = new RandomAccessFile(fileName, "rw");
-        } catch (FileNotFoundException e) {
-            System.err.println(fileName + " not found.");
+            file.close();
+        } catch (IOException e) {
+            System.err.println("Error message: " + e.getMessage());
         }
     }
 
@@ -30,27 +33,17 @@ public class ListFile {
     }
 
     public Entry getEntry(long offset) {
-        try {
-            file.seek(offset * 8);
-            file.readLong();
-        } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
-        }
+        this.get((int) offset);
         return new Entry("", 0, 0);
     }
 
     public void putEntry(long offset, Entry entry) {
-        try {
-            file.seek(offset * 8);
-            file.writeLong(entry.getValue());
-        } catch (IOException e) {
-            System.err.println("Error: " + e.getMessage());
-        }
+        this.set(offset, newEntry(entry));
     }
 
-    public static boolean delete(String fileName) {
+    public static void delete(String fileName) {
         File f = new File(fileName);
-        return f.delete();
+        f.delete();
     }
 
     public void close() {

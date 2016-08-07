@@ -7,33 +7,37 @@ import java.io.RandomAccessFile;
 
 /**
  * Created by DLN on 8/1/16.
- *
+ * <p>
  * ** just getting rid of the warning
  */
-class PersistentArray {
+public class PersistentArray {
     private static RandomAccessFile file;
-    private int arraySize;
-    private long initialValue;
 
-    PersistentArray(String fileName) {
-        if (!fileName.endsWith(".bin"))
-            fileName = fileName + ".bin";
-        this.arraySize = 0;
-        this.initialValue = 0;
-        initialize(fileName, getArraySize(), getInitialValue());
+    public PersistentArray(String fileName) {
+        try {
+            file = new RandomAccessFile(fileName, "rw");
+        } catch (IOException e) {
+            System.err.println("File not found!");
+        }
     }
 
     public static void initialize(String fileName, int size, long initialValue) {
+        if (!fileName.endsWith(".bin"))
+            fileName = fileName + ".bin";
+
         try {
             file = new RandomAccessFile(fileName, "rw");
-            file.setLength(size);
-            file.seek(initialValue);
+            for (int a = 0; a < size; a++) {
+                file.seek(a * 8);
+                file.writeLong(initialValue);
+            }
+            file.close();
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
     }
 
-    void set(int index, long value) {
+    public void set(long index, long value) {
         try {
             file.seek(index * 8);
             file.writeLong(value);
@@ -42,7 +46,7 @@ class PersistentArray {
         }
     }
 
-    long get(int index) {
+    public long get(long index) {
         try {
             file.seek(index * 8);
             return file.readLong();
@@ -54,16 +58,16 @@ class PersistentArray {
         return -0;
     }
 
-    long getLength() {
+    public long getLength() {
         try {
-            return (file.length());
+            return file.length();
         } catch (IOException e) {
             System.err.println("Length not found!");
         }
         return 0;
     }
 
-    void close() {
+    public void close() {
         try {
             file.close();
         } catch (IOException e) {
@@ -71,24 +75,8 @@ class PersistentArray {
         }
     }
 
-    public static boolean delete(String fileName) {
+    public static void delete(String fileName) {
         File f = new File(fileName);
-        return f.delete();
-    }
-
-    public int getArraySize() {
-        return (int) getLength() / 8;
-    }
-
-    public void setArraySize(int arraySize) {
-        this.arraySize = arraySize;
-    }
-
-    public long getInitialValue() {
-        return initialValue;
-    }
-
-    public void setInitialValue(long initialValue) {
-        this.initialValue = initialValue;
+        f.delete();
     }
 }

@@ -25,13 +25,4 @@ public class PersistentArrayTest {
         test.close();
     }
 
-    @Test
-    public void delete() throws Exception {
-        PersistentArray test = new PersistentArray("testingFile2.bin");
-
-        /* MUST RUN test() METHOD FIRST! */
-        assertTrue(test.delete("testingfile1.bin"));
-        test.close();
-    }
-
 }
