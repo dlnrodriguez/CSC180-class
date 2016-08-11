@@ -1,4 +1,4 @@
-package WeekSix.Practice;
+package WeekEight.Practice;
 
 /**
  * Created by Dylon on 8/8/2016.
@@ -29,5 +29,10 @@ public class Movie {
 
     public float getRating() {
         return rating;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s (%d). %s. %.1f Stars", getTitle(), getYear(), getGenre(), getRating());
     }
 }

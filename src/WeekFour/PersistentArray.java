@@ -14,6 +14,7 @@ public class PersistentArray {
     private static RandomAccessFile file;
 
     public PersistentArray(String fileName) {
+        fileName = binCheck(fileName);
         try {
             file = new RandomAccessFile(fileName, "rw");
         } catch (IOException e) {
@@ -22,9 +23,7 @@ public class PersistentArray {
     }
 
     public static void initialize(String fileName, int size, long initialValue) {
-        if (!fileName.endsWith(".bin"))
-            fileName = fileName + ".bin";
-
+        fileName = binCheck(fileName);
         try {
             file = new RandomAccessFile(fileName, "rw");
             for (int a = 0; a < size; a++) {
@@ -76,7 +75,12 @@ public class PersistentArray {
     }
 
     public static void delete(String fileName) {
-        File f = new File(fileName);
-        f.delete();
+        new File(fileName).delete();
+    }
+
+    private static String binCheck(String s) {
+        if (!s.endsWith(".bin"))
+            s = s + ".bin";
+        return s;
     }
 }

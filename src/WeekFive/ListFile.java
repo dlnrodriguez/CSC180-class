@@ -29,7 +29,7 @@ public class ListFile extends PersistentArray {
     }
 
     public long newEntry(Entry entry) {
-        return (long) entry.hashCode();
+        return -0;
     }
 
     public Entry getEntry(long offset) {
@@ -42,8 +42,7 @@ public class ListFile extends PersistentArray {
     }
 
     public static void delete(String fileName) {
-        File f = new File(fileName);
-        f.delete();
+        new File(fileName).delete();
     }
 
     public void close() {
