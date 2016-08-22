@@ -59,6 +59,11 @@ package WeekFive;
  */
 public class ListFile_main {
     public static void main(String[] args) {
-        ListFile.initialize("listfile.bin");
+        ListFile.initialize("listFile.bin");
+        ListFile l = new ListFile("listFile");
+
+        //l.putEntry(0, new Entry("apple.gov", 681, 98520));
+        l.newEntry(new Entry("bushdidit.gov", 911, 2001)); // 253
+        System.out.println(l.getEntry(0).toString());
     }
 }

@@ -34,23 +34,11 @@ public class Entry {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Entry entry = (Entry) o;
-
-        if (value != entry.value) return false;
-        if (link != entry.link) return false;
-        return string != null ? string.equals(entry.string) : entry.string == null;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = string != null ? string.hashCode() : 0;
-        result = 31 * result + (int) (value ^ (value >>> 32));
-        result = 31 * result + (int) (link ^ (link >>> 32));
-        return result;
+    public String toString() {
+        return "Entry{" +
+                "string='" + string + '\'' +
+                ", value=" + value +
+                ", link=" + link +
+                '}';
     }
 }

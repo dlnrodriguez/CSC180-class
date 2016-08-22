@@ -7,9 +7,10 @@ import java.io.RandomAccessFile;
 
 /**
  * Created by DLN on 8/1/16.
- * <p>
+ * *
  * ** just getting rid of the warning
  */
+
 public class PersistentArray {
     private static RandomAccessFile file;
 
@@ -59,7 +60,7 @@ public class PersistentArray {
 
     public long getLength() {
         try {
-            return file.length();
+            return file.length() / 8;
         } catch (IOException e) {
             System.err.println("Length not found!");
         }

@@ -21,6 +21,7 @@ public class PersistentArrayTest {
         assertEquals(test.get(1), 18L);
         assertEquals(test.get(2), 17L);
         assertNotEquals(test.get(1), 16L);
+        assertEquals(test.getLength(), 3);
 
         test.close();
     }
